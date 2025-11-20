@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="Flights.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-pZgaWYpVlKIRJ8hD2Z0K1Z0V1+c1yUNIm5g6ZtqNjz+1axgmcJpG/22BiIcV3u8k0P7h3IOfYZu7kF++3Y6T3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="Tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+ <section id="flights" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800 mb-3">✈️ Flight Deals & Booking</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Find the best flights, compare prices, and book easily with our real-time search system.
+      </p>
+    </div>
+
+    <!-- Search Form -->
+    <div class="bg-white shadow-lg rounded-2xl p-6 mb-12">
+      <div class="grid md:grid-cols-4 gap-6">
+
+        <!-- From -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">From</label>
+          <input type="text" placeholder="New York (JFK)" 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+        <!-- To -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">To</label>
+          <input type="text" placeholder="London (LHR)" 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+        <!-- Departure -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Departure</label>
+          <input type="date" 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+        <!-- Return -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Return</label>
+          <input type="date" 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-6">
+        <button id="searchFlights" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-blue-700 transition">
+          Search Flights
+        </button>
+      </div>
+    </div>
+
+    <!-- Flight Results -->
+    <div id="flightResults" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Cards will appear here -->
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

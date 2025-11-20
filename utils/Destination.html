@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations</title>
+  <script src="Destination.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-pZgaWYpVlKIRJ8hD2Z0K1Z0V1+c1yUNIm5g6ZtqNjz+1axgmcJpG/22BiIcV3u8k0P7h3IOfYZu7kF++3Y6T3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="Tailwind.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="relative h-[60vh] bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?travel,beach');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-4xl md:text-6xl text-white font-bold">Explore Top Destinations</h1>
+    </div>
+  </section>
+
+  <!-- Top Destinations -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">Top Destinations</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="relative group cursor-pointer">
+        <img src="https://source.unsplash.com/400x300/?paris" class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-xl drop-shadow-lg">Paris, France</div>
+      </div>
+      <div class="relative group cursor-pointer">
+        <img src="https://source.unsplash.com/400x300/?tokyo" class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-xl drop-shadow-lg">Tokyo, Japan</div>
+      </div>
+      <div class="relative group cursor-pointer">
+        <img src="https://source.unsplash.com/400x300/?bali" class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-xl drop-shadow-lg">Bali, Indonesia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Trips -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">Popular Trips</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?mountains" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Alps Adventure</h3>
+          <p class="text-gray-600 mb-4">7 days exploring the majestic Alps with guided hikes and cozy lodges.</p>
+          <button onclick="showAlert('Alps Adventure')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View More</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?desert" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Sahara Expedition</h3>
+          <p class="text-gray-600 mb-4">5 days of camel rides, starry nights, and desert adventures in Morocco.</p>
+          <button onclick="showAlert('Sahara Expedition')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View More</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?beach" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Bali Getaway</h3>
+          <p class="text-gray-600 mb-4">Relaxing 6-day trip with surf, yoga, and beautiful sunsets on the beach.</p>
+          <button onclick="showAlert('Bali Getaway')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

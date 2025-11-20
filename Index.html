@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="es">
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jadoooo</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-pZgaWYpVlKIRJ8hD2Z0K1Z0V1+c1yUNIm5g6ZtqNjz+1axgmcJpG/22BiIcV3u8k0P7h3IOfYZu7kF++3Y6T3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="Tailwind.css" rel="stylesheet">
+</head>
+<body class="">
+
+    <section>
+      <nav class="absolute w-full top-0 left-0 z-50 bg-transparent text-gray-800">
+        <div class="left-36 mx-auto px-0 flex justify-between items-center h-20 relative">
+          
+          <!-- logo -->
+          <a href="#" 
+            class="relative flex items-center text-2xl font-extrabold" 
+            style="position:absolute; top:48.7px; width:114.91px; height:33.99px;">
+            <img src="icons/Logo.png" 
+                alt="Logo" 
+                style="width:100%; height:100%; object-fit:contain;">
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="md:flex items-center">
+            <a href="utils/Destination.html" class="absolute top-[56px] left-[478px] w-[100px] h-[22px] flex items-center justify-center text-gray-800 hover:text-blue-600 font-medium transition" >Destinations</a>
+            <a href="utils/Hotels.html" class="absolute top-[56px] left-[633px] w-[51px] h-[22px] flex items-center justify-center text-gray-800 hover:text-blue-600 font-medium transition">Hotels</a>
+            <a href="utils/Flights.html" class="absolute top-[56px] left-[748px] w-[53px] h-[22px] flex items-center justify-center text-gray-800 hover:text-blue-600 font-medium transition">Flights</a>
+            <a href="utils/Bookings.html" class="absolute top-[56px] left-[863px] w-[74px] h-[22px] flex items-center justify-center text-gray-800 hover:text-blue-600 font-medium transition">Bookings</a>
+            <a href="utils/Login.html" class="absolute top-[56px] left-[1023px] w-[44px] h-[22px] flex items-center justify-center text-gray-800 hover:text-blue-600 font-medium transition">Login</a>
+            <a href="utils/Signup.html" class="absolute top-[47px] left-[1119px] w-[102px] h-[40px] flex items-center justify-center text-gray-800 text-[17px] font-medium leading-[100%] tracking-[0%] border border-gray-800 rounded-[5px] px-[0] py-[0] transition">Sign Up</a>
+            <select id="languageSelect" class="absolute top-[56px] left-[1263px] w-[55px] h-[22px] text-gray-800 px-[0.25rem] py-[0]">
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+
+          <!-- Mobile Button -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-gray-800 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" 
+                  viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300" id="mobile-menu">
+          <div class="px-6 py-8 space-y-6">
+            <a href="utils/Destination.html" class="block text-gray-800 hover:text-blue-600 font-medium">Destinations</a>
+            <a href="utils/Hotels.html" class="block text-gray-800 hover:text-blue-600 font-medium">Hotels</a>
+            <a href="utils/Flights.html" class="block text-gray-800 hover:text-blue-600 font-medium">Flights</a>
+            <a href="utils/Bookings.html" class="block text-gray-800 hover:text-blue-600 font-medium">Bookings</a>
+            <a href="utils/Login.html" class="block text-gray-800 hover:text-blue-600 font-medium">Login</a>
+            <a href="utils/Signup.html" class="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-medium text-center">Sign Up</a>
+            <select id="language" class="block w-full rounded px-2 py-1 text-gray-800">
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="relative min-h-screen bg-white flex flex-col md:flex-row items-center px-6 md:px-16 lg:px-36 py-10 md:py-0">
+
+      <!-- Left text content -->
+      <div class="flex-1 flex flex-col justify-center items-start space-y-5 md:space-y-6 text-center md:text-left">
+        
+        <!-- H1 -->
+        <h1 class="text-red-400 uppercase font-extrabold text-xs sm:text-sm md:text-base tracking-wider">
+          Best Destinations around the world
+        </h1>
+
+        <!-- H2 -->
+        <h2 class="text-gray-900 font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight">
+          Travel, enjoy <br class="hidden sm:block"> and live a new <br class="hidden sm:block"> and full life
+        </h2>
+
+        <!-- Paragraph -->
+        <p class="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
+          Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening.
+          Park gate sell they west hard for the.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-4">
+
+          <!-- Find out more -->
+          <a href="https://www.srdvtechnologies.com/white-label-travel-portal?gad_source=1&gad_campaignid=1601245369&gbraid=0AAAAAC6mgH_WsWWNOCCqGzq1qQ4U1oa3z&gclid=CjwKCAjwup3HBhAAEiwA7euZum6uV56guf1AnLJpjW0mHhKmZEcWOUZ6AeSKN_Hy_oMFd3sE-o1VzhoCGkgQAvD_BwE" 
+            class="bg-yellow-400 text-black font-semibold px-6 py-4 rounded-2xl shadow-md hover:bg-yellow-500 hover:shadow-lg transition">
+            Find out more
+          </a>
+
+          <!-- Play Demo -->
+          <button class="flex items-center gap-3 text-gray-800 font-medium hover:text-blue-600 transition">
+            <img src="icons/Playbutton.png" alt="Play" class="w-10 sm:w-12 object-contain">
+            <a href="https://www.youtube.com/watch?v=wqLDXQrLlug" class="font-medium">Play Demo</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right image container -->
+      <div class="flex-1 flex justify-center md:justify-end items-center relative mt-10 md:mt-0">
+
+        <div class="relative w-[300px] sm:w-[500px] md:w-[650px] lg:w-[783px] h-[350px] sm:h-[500px] md:h-[650px] lg:h-[764px]">
+
+          <!-- Decorative background -->
+          <img src="icons/Decore.png"
+              alt="Decor"
+              class="absolute -top-10 left-[60px] sm:left-[100px] md:left-[150px] w-[900px] sm:w-[1300px] md:w-[2024px] h-auto object-contain z-0">
+
+          <!-- Main image -->
+          <img src="icons/Traveller.png"
+              alt="Traveller"
+              class="absolute top-[60px] sm:top-[90px] md:top-[105px] right-[30px] sm:right-[60px] md:right-[100px] w-full h-full object-contain">
+
+          <!-- Plane 1 -->
+          <img src="icons/plane.png"
+              alt="Plane 1"
+              class="absolute top-20 sm:top-32 md:top-48 left-0 sm:left-2 w-[100px] sm:w-[160px] md:w-[220px] h-auto object-contain z-10">
+
+          <!-- Plane 2 -->
+          <img src="icons/plane(1).png"
+              alt="Plane 2"
+              class="absolute bottom-[180px] sm:bottom-[300px] md:bottom-[440px] right-6 sm:right-10 md:right-16 w-10 sm:w-16 md:w-24 h-auto object-contain z-10">
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center mt-24 py-20 text-center">
+      <h1 class="text-gray-500 font-Poppins w-4 text-lg leading-none mb-3">
+        CATEGORY
+      </h1>
+      <p class="text-gray-800 text-Volkhov font-bold text-5xl leading-none max-w-2xl text-center">
+        We Offer Best Services
+      </p>
+    </section>
+
+    <section class="py-1 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20">
+
+          <!-- Card 1 -->
+          <div class="relative group flex flex-col items-center">
+            <!-- Decorative rectangle -->
+            <img src="icons/Rectangle.png"
+              class="absolute -bottom-20 -left-20 w-30 h-40 opacity-0 group-hover:opacity-60 group-hover:-bottom-8 transition-all duration-500 z-0" />
+            
+            <!-- Card content -->
+            <div class="relative bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 text-center transition-all duration-300 z-10 w-full h-full">
+              <img src="icons/section2_1.png" alt="Weather" class="mx-auto mb-1 w-20 h-20 object-contain">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Calculated Weather</h3>
+              <p class="text-gray-600 mb-6">Built Wicket longer admire do barton vanity itself do in it.</p>
+              <button class="border border-gray-400 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-white transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative group flex flex-col items-center">
+            <img src="icons/Rectangle.png"
+              class="absolute -bottom-20 -left-20 w-30 h-40 opacity-0 group-hover:opacity-60 group-hover:-bottom-8 transition-all duration-500 z-0" />
+            <div class="relative bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 text-center transition-all duration-300 z-10 w-full h-full">
+              <img src="icons/section2_2.png" alt="Flights" class="mx-auto mb-1 w-20 h-20 object-contain">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Best Flights</h3>
+              <p class="text-gray-600 mb-6">Engrossed listening. Park gate sell they west hard for the.</p>
+              <button class="border border-gray-400 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-white transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative group flex flex-col items-center">
+            <img src="icons/Rectangle.png"
+              class="absolute -bottom-20 -left-20 w-30 h-40 opacity-0 group-hover:opacity-60 group-hover:-bottom-8 transition-all duration-500 z-0" />
+            <div class="relative bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 text-center transition-all duration-300 z-10 w-full h-full">
+              <img src="icons/section2_3.png" alt="Events" class="mx-auto mb-1 w-20 h-20 object-contain">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Local Events</h3>
+              <p class="text-gray-600 mb-6">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+              <button class="border border-gray-400 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-white transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="relative group flex flex-col items-center">
+            <img src="icons/Rectangle.png"
+              class="absolute -bottom-20 -left-20 w-30 h-40 opacity-0 group-hover:opacity-60 group-hover:-bottom-8 transition-all duration-500 z-0" />
+            <div class="relative bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 text-center transition-all duration-300 z-10 w-full h-full">
+              <img src="icons/section2_4.png" alt="Customize" class="mx-auto mb-1 w-20 h-20 object-contain">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Customization</h3>
+              <p class="text-gray-600 mb-6">We deliver outsourced aviation services for military customers.</p>
+              <button class="border border-gray-400 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-800 hover:text-white transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-16 pb-24 relative">
+      <!-- Centered larger container -->
+      <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Headings -->
+        <h2 class="text-lg font-medium text-gray-600 tracking-wide uppercase text-center mb-2">
+          Top Selling 
+        </h2>
+        <h2 class="text-7xl font-bold text-gray-900 text-center mb-12">
+          Top Destinations
+        </h2>
+
+        <!-- Cards grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" 
+                alt="Rome" class="w-100 h-80 object-cover">
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-1">
+                <h3 class="text-lg font-semibold text-gray-900">Rome, Italy</h3>
+                <p class="text-gray-700 font-medium">$5.42k</p>
+              </div>
+              <p class="text-gray-600 text-sm leading-snug">▸ 10 days trip</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAw2Kphhwebvh4x_i4J_BmwGDEAoDuG_Bpw&s" 
+                alt="London" class="w-100 h-80 object-cover">
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-1">
+                <h3 class="text-lg font-semibold text-gray-900">London, UK</h3>
+                <p class="text-gray-700 font-medium">$4.78k</p>
+              </div>
+              <p class="text-gray-600 text-sm leading-snug">▸ 12 Days Trip</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative z-10 bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+            <img src="https://cdn.britannica.com/31/255531-050-B7E07090/eiffel-tower-paris-france-champ-de-mars-view.jpg" 
+                alt="Paris" class="w-100 h-80 object-cover">
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-1">
+                <h3 class="text-lg font-semibold text-gray-900">Paris, France</h3>
+                <p class="text-gray-700 font-medium">$6.10k</p>
+              </div>
+              <p class="text-gray-600 text-sm leading-snug">▸ 7 days trip</p>
+            </div>
+          </div>
+
+          <!-- Decorative Image -->
+          <img 
+            src="icons/Decorec.png" 
+            alt="Decor"
+            class="absolute left-[96%] top-10 w-30 h-auto pointer-events-none select-none opacity-80">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20  font-[Poppins,sans-serif]">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start md:space-x-20 space-y-10 md:space-y-0">
+
+        <!-- Left Section -->
+        <div class="flex-1 space-y-10">
+          <div class="text-center md:text-left">
+            <h2 class="text-[20px]  text-gray-600 mb-2 tracking-tight">Easy & Fast</h2>
+            <p class="text-[32px] font-semibold  text-gray-900">Book Your Next Trip <br> in 3 Easy Steps</p>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="flex items-start space-x-5">
+            <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-xl">
+              <img src="icons/icons2.js/destinaion.png" class="fa-solid fa-location-crosshairs text-blue-600 text-xl">
+            </div>
+            <div>
+              <h3 class="text-gray-900 font-semibold text-[18px] mb-1">Choose Destination</h3>
+              <p class="text-gray-600 text-[14px] leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start space-x-5">
+            <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-xl">
+              <img src="icons/icons2.js/payment.png" class="fa-solid fa-credit-card text-blue-600 text-xl">
+            </div>
+            <div>
+              <h3 class="text-gray-900 font-semibold text-[18px] mb-1">Make Payment</h3>
+              <p class="text-gray-600 text-[14px] leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start space-x-5">
+            <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-xl">
+              <img src="icons/icons2.js/reachairport.png" class="fa-solid fa-smile-beam text-blue-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-gray-900 font-semibold text-[18px] mb-1">Enjoy Your Trip</h3>
+              <p class="text-gray-600 text-[14px] leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="relative w-full md:w-80 flex-shrink-0">
+
+
+
+      
+          <div class="bg-white rounded-2xl shadow-xl p-5 relative">
+            
+            <img src="icons/icons2.js/Profilepic.jpg"
+                alt="Trip to Greece"
+                class="w-full h-44 object-cover rounded-lg mb-4">
+
+            <h3 class="text-[18px] font-semibold text-gray-900">Trip to Greece</h3>
+            <p class="text-[14px] text-gray-500 mb-3">14-29 June| by Robbin joseph</p>
+
+
+            <div class="flex items-center space-x-3 mb-5 text-gray-500 text-[13px]">
+              <span class="flex items-center space-x-1"><img src="icons/icons2.js/leaf.png" class="w-4 h-4"> </span>
+              <span class="flex items-center space-x-1"><img src="icons/icons2.js/map.svg" class="w-4 h-4"></span>
+              <span class="flex items-center space-x-1"><img src="icons/icons2.js/send.png" class="w-4 h-4"></span>
+            </div>
+
+            
+            <div class="flex -space-x-2">
+              <img src="icons/icons2.js/people.png" class="w-4 h-7 rounded-full border-2 border-white">
+              <div class="flex items-center justify-between text-[13px] text-gray-600">
+                <span class="text-[14px] text-gray-500">24 people going </span>
+                <span class="ml-36">♡</span>
+              </div>
+            </div>
+          </div>
+
+                
+          <div class="absolute bottom-10 left-48 bg-white shadow-md rounded-2xl px-4 py-3 w-44">
+            <div class="flex items-center space-x-3">
+              <img src="icons/plane(1).png"
+                  alt="Ongoing Trip"
+                  class="w-10 h-10 rounded-full object-cover">
+              <div>
+                <p class="text-[13px] text-gray-500">Ongoing</p>
+                <h4 class="font-semibold text-[15px] text-gray-900">Trip to Rome</h4>
+              </div>
+            </div>
+            <div class="mt-2">
+              <div class="flex items-center justify-between text-[13px] text-gray-600">
+                <span><i class="fa-solid fa-plane-departure text-blue-500 mr-1"></i>40%</span>
+                <span>Completed</span>
+              </div>
+              <div class="w-full h-2 bg-gray-200 rounded-full mt-1">
+                <div class="h-2 bg-blue-500 rounded-full w-[40%]"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-28 px-6">
+      <div class="flex flex-col md:flex-row md:items-start md:gap-10">
+
+        <!-- PART 1: Title -->
+        <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-4 mb-8 md:mb-0">
+          <h2 class="text-xl font-bold text-gray-900">Testimonials</h2>
+          <p class="text-2xl md:text-3xl font-semibold text-gray-700">What people say about Us.</p>
+
+          <!-- Dots -->
+          <div id="dots" class="flex justify-center md:justify-start gap-3 mt-2">
+            <div class="dot w-4 h-4 rounded-full bg-gray-400"></div>
+            <div class="dot w-4 h-4 rounded-full bg-gray-400"></div>
+            <div class="dot w-4 h-4 rounded-full bg-gray-400"></div>
+          </div>
+        </div>
+
+        <!-- PART 2: Slider -->
+        <div class="relative flex-1 max-w-md mx-auto h-40 overflow-hidden">
+          <div id="testimonial-slider" class="transition-transform duration-500">
+              
+            <!-- Slide 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 h-80 flex flex-col relative">
+              <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241" class="w-24 h-24 object-cover rounded-full absolute -top-12 left-4 shadow-md">
+              <p class="text-gray-700 text-lg mt-16">“This is the first testimonial.”</p>
+              <div class="mt-4 text-gray-800 font-semibold">Mike Taylor</div>
+              <div class="text-gray-500">Lahore, Pakistan</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 h-80 flex flex-col relative">
+              <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241" class="w-24 h-24 object-cover rounded-full absolute -top-12 left-4 shadow-md">
+              <p class="text-gray-700 text-lg mt-16">“This is the second testimonial.”</p>
+              <div class="mt-4 text-gray-800 font-semibold">Sarah Lee</div>
+              <div class="text-gray-500">New York, USA</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-8 h-80 flex flex-col relative">
+              <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241" class="w-24 h-24 object-cover rounded-full absolute -top-12 left-4 shadow-md">
+              <p class="text-gray-700 text-lg mt-16">“This is the third testimonial.”</p>
+              <div class="mt-4 text-gray-800 font-semibold">John Doe</div>
+              <div class="text-gray-500">London, UK</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PART 3: Arrows -->
+        <div class="flex-1 flex flex-col items-center md:items-end justify-center gap-6 mt-8 md:mt-0">
+          <button id="up" class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-300 hover:bg-gray-400 text-xl">▲</button>
+          <button id="down" class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-300 hover:bg-gray-400 text-xl">▼</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-16 px-6">
+      <div class="flex justify-between items-center gap-8 flex-wrap md:flex-nowrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GUKnl3Zo5zcMNEyDGfFBZdPYLnr3rJEwcxsFYsks8j2eDVNAiI0zWHB9YJUnszZj-G4&usqp=CAU" class="w-32 h-32 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GUKnl3Zo5zcMNEyDGfFBZdPYLnr3rJEwcxsFYsks8j2eDVNAiI0zWHB9YJUnszZj-G4&usqp=CAU" class="w-32 h-32 object-contain">
+        <img src="data:image/png;base64,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" alt="Image 3" class="w-1/5 min-w-[100px] shadow-[0_60px_60px_rgba(0,0,0,0.10)] object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+        <img src="data:image/png;base64,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" class="w-32 h-32 object-contain">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAACcnJyZmZnJycn39/fExMSPj49TU1MbGxvQ0NDp6elvb28fHx++vr6qqqrW1tZISEgKCgpfX1/f399NTU1paWnd3d12dnaLi4uBgYGurq7x8fG1tbV7e3srKys1NTVAQEAkJCQuLi5YWFgVFRWjo6M7OzvTppy3AAAEqklEQVR4nO2a2WKqOhRAVXCoU7UHpzpU2x77/394BTHZGcCAeB5613ojpDtZsslEWy0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/LZGHXnYnVtf9JL3u9lXBtoGGEx1umBV0dAcaCK+I2h422a2+LojT666+njfQck+H62QFogMNhL+R+ATb/eyekLcNBw007Ri+PMXw47cbikT8nYb+HA037M5yVjUa/yeGnw8ajm7XkxqN/wvDghwNMFxcAyjDY43WHcO3xg3NHD3eN1yOb1wraMPPGs07hmsVftmIn5Wj763pPUMXZdjuVm/eMWycjRS8vEjDRwxr/OpPN1wZOboKMdxPb+TG2rB92sdXeqKN0bQ/XlxT5XMxjnrGk3YMpxqzq8l+s5xn49Db12B9HgYaTqRguky7a+iu2oSh5qaxi/469+ai74GrtuTdbWIZImnnaDVDe7bwGG589y5NJYWGvtmi+8cfZnH3xTdzNGne8MvfswuzCobeBq7s7hi+yMpXoUYNB8Vdu3U/xLAkyrFc0EihfDJr0nBolLxvX+XLdA42PMsok/72vBbXpe/izOhA0ryhXC3lq4MfVfAdbCgz4brp3jlx/RiDXFqzFzJbVDA86Mvb7KHDfwUbnnTJyHms6xJBY/z9SEvSAI8aHgeDxfz0M+kaLZxvjeq/ngQbzlWBSkndy3GxoJujhwYMjQ2UeoZ6warrhhuqzNY2+q9KDJ0cHbYfNzR3iPFrzkwV6ccabrjPo5xHKox+NYsNPTn6uOFP8Q+a0RVvZrihw0iMPYWGbo6uGzD8UyKX9CJjeqxn2F1N+ycZptDwTdZKDyYzs6cY7vaHudFcPcPR6/jkBCk2NHI0G7fbTzKMi9Y11Qz3RzdCmaGZo+kLvH6O4U6P9I8Yzibu35cbOjkaK9dGDc1fsrbhtiSM3/Agq+gcbdzQ3LrUNtyXhfEamgviNEfHzzE0epLPiYvKhsaSqZ9Yob2GhqDI0aYN5ecetd5SL2aw4bcu+Kvm/FJDI0ePRvVmDX2C1Q3FPkLsd8sMi3P0ccNv2ZAYZoR5ZcOtXeGuoSHYMdt4eF0qGxJdEydPlQ1Fyul1aZmh3B+3j5byw4YH0ZL/oLWyoTiEEocyxYZuji6bNGzPt72cbkeXbh4wFP0TqVBsaAhaOVrXUI4FmpmcxnR+VTYUC8y3AEM9qLTzvY7Rq3qG/rOwmfHJZ3/rQeX5UP5QLyrdiwzjtsTO0dqG3sXnzDyrvDyBDHUZaija84WxDI2qZztHaxt6l1UzO7hF8Ixf+H0zwzS8k6O1Db1fkWfWuG0Tvi49lYUxDN0ctT8H1DX0nSem61DP5xRFhb1F2dG5YWjcSXN0aleva+j7Z4dspR0Xb+w+wg3Ltk/yvNR4YD8t9x22DSv9T5TzkSnfS8RL+0bO1jGM7Ocgwu+LnqM+xmvt+h1NlOZoL+qYRJdFw0gVRtehOdYF152Lvjb/ry3eGrH0FJhMXzs20W0tnkRWkahjhG+tpmcnTGfUAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+NX8B0aHQTvk2DzqAAAAAElFTkSuQmCC" class="w-32 h-32 object-contain">
+      </div>
+    </section>
+    
+    <section class="max-w-4xl mx-auto my-20 px-6 py-20 bg-gray-50 rounded-t-2xl shadow-lg relative">
+      <!-- Top-right send button (independent) -->
+      <div class="absolute -top-3 -right-7">
+        <img src="icons/icons2.js/send.png" class="w-10 h-10">
+      </div>
+
+      <img src="icons/icon3/round-decore.png" class="absolute left-4 bottom-2 w-64 h-48 opacity-30">
+      <img src="icons/icon3/round-decore2.png" class="absolute right-4 top-4 w-38 h-44 opacity-30">
+
+      <div class="max-w-xl mx-auto text-center space-y-6 relative z-10">
+        <h2 class="text-2xl font-bold text-gray-900 leading-snug">
+          Subscribe to get information,latest news and other<br>
+          interesting offers about Jadoo
+        </h2>
+
+        <div class="relative mt-4 flex items-center">
+          <input type="email" id="email" required
+                class="peer flex-1 border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#FF7D68] py-3 px-4 rounded-l-full"
+                placeholder="Your email" />
+          <label for="email"
+                class="absolute left-4 top-3 text-[#FF7D68] text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-[#FF7D68] peer-focus:text-sm">
+            Your Email
+          </label>
+          <button class="bg-[#FF7D68] text-white ml-2 py-3 px-6 rounded-2xl shadow-lg hover:bg-[#FF7D68] transition-colors duration-300">
+            Subscribe
+          </button>
+        </div>
+      </div>
+   
+    <img src="icons/icon3/plusBox.png" 
+        class="absolute -right-20 -bottom-14 w-46 h-36">
+    </section>
+    
+    <footer class=" text-gray-800 my-10 px-6 py-20">
+      <div class="flex items-start justify-between max-w-7xl mx-auto space-x-12">
+
+        <!-- 1st Column: Branding -->
+        <div class="flex-shrink-0">
+          <div class="text-2xl font-bold text-gray-900">Jadoo.</div>
+          <p class="text-gray-600 text-sm max-w-xs">
+            Book your trip in minutes, get full <br> 
+            control for much longer.
+          </p>
+        </div>
+
+        <!-- 2nd Column: Company -->
+        <div class="flex-shrink-0">
+          <h3 class="font-semibold text-gray-900 mb-1">Company</h3>
+          <ul class="space-y-1 text-gray-600 text-sm">
+            <li><a href="#" class="hover:text-gray-900 transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Mobile</a></li>
+          </ul>
+        </div>
+
+        <!-- 3rd Column: Contact -->
+        <div class="flex-shrink-0">
+          <h3 class="font-semibold text-gray-900 mb-1">Contact</h3>
+          <ul class="space-y-1 text-gray-600 text-sm">
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Help/FAQ</a></li>
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Press</a></li>
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Affiliates</a></li>
+          </ul>
+        </div>
+
+        <!-- 4th Column: More -->
+        <div class="flex-shrink-0">
+          <h3 class="font-semibold text-gray-900 mb-1">More</h3>
+          <ul class="space-y-1 text-gray-600 text-sm">
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Airline Fees</a></li>
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Airline</a></li>
+            <li><a href="#" class="hover:text-gray-900 transition-colors">Low Fare Tips</a></li>
+          </ul>
+        </div>
+
+        <!-- 5th Column: Social + App -->
+        <div class="flex-shrink-0 space-y-2">
+          <!-- Social Icons -->
+          <div class="flex space-x-3 text-gray-600">
+            <a href="#" class="hover:text-gray-900 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99h-2.54V12h2.54V9.8c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
+            </a>
+            <a href="#" class="hover:text-gray-900 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0121 7.5v9A4.5 4.5 0 0116.5 21h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3zm0 1.5A3 3 0 004.5 7.5v9a3 3 0 003 3h9a3 3 0 003-3v-9a3 3 0 00-3-3h-9zm9 1.5a.75.75 0 110 1.5.75.75 0 010-1.5zM12 7.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 1.5a3 3 0 100 6 3 3 0 000-6z"/></svg>
+            </a>
+            <a href="#" class="hover:text-gray-900 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4 1.5a9.13 9.13 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.12A12.87 12.87 0 013 2.14a4.52 4.52 0 001.4 6.03A4.52 4.52 0 012 7.88v.06a4.52 4.52 0 003.63 4.42 4.5 4.5 0 01-2.04.08 4.52 4.52 0 004.22 3.13A9.06 9.06 0 012 18.57 12.8 12.8 0 008.29 20c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.35 8.35 0 0023 3z"/></svg>
+            </a>
+          </div>
+          <div class="text-xl text-gray-600">Discover our app</div>
+          <!-- App Download -->
+          <div class="flex space-x-2">
+            <a href="#" class="bg-black text-white px-3 py-1 rounded-lg text-xs flex items-center justify-center hover:bg-gray-800 transition-colors">
+              Google Play
+            </a>
+            <a href="#" class="bg-black text-white px-3 py-1 rounded-lg text-xs flex items-center justify-center hover:bg-gray-800 transition-colors">
+              App Store
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- External Script -->
+  <script src="Navbar.js"></script>
+</body>
+</html>

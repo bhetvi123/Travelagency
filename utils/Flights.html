@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <script src="Signup.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-pZgaWYpVlKIRJ8hD2Z0K1Z0V1+c1yUNIm5g6ZtqNjz+1axgmcJpG/22BiIcV3u8k0P7h3IOfYZu7kF++3Y6T3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="Tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6">
+    <h1 class="text-4xl font-bold text-center">Emirates Airlines ✈️</h1>
+    <p class="text-center mt-2 text-lg">Complete Flight Schedules, Timings, and Booking Info</p>
+  </header>
+
+  <!-- Flight Table Section -->
+  <section class="max-w-6xl mx-auto p-6 mt-8 bg-white shadow-lg rounded-2xl">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Available Flights</h2>
+    
+    <table class="w-full border-collapse text-gray-700">
+      <thead>
+        <tr class="bg-blue-100 text-gray-800">
+          <th class="border px-4 py-2">Flight No.</th>
+          <th class="border px-4 py-2">From</th>
+          <th class="border px-4 py-2">Departure</th>
+          <th class="border px-4 py-2">To</th>
+          <th class="border px-4 py-2">Arrival</th>
+          <th class="border px-4 py-2">Duration</th>
+          <th class="border px-4 py-2">Stops</th>
+          <th class="border px-4 py-2">Aircraft</th>
+          <th class="border px-4 py-2">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">EK 203</td>
+          <td class="border px-4 py-2">New York (JFK)</td>
+          <td class="border px-4 py-2">12 Oct 2025, 22:00</td>
+          <td class="border px-4 py-2">Dubai (DXB)</td>
+          <td class="border px-4 py-2">13 Oct 2025, 18:30</td>
+          <td class="border px-4 py-2">15h 30m</td>
+          <td class="border px-4 py-2">Non-stop</td>
+          <td class="border px-4 py-2">Boeing 777-300ER</td>
+          <td class="border px-4 py-2">$899</td>
+        </tr>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">EK 204</td>
+          <td class="border px-4 py-2">Dubai (DXB)</td>
+          <td class="border px-4 py-2">14 Oct 2025, 02:00</td>
+          <td class="border px-4 py-2">London (LHR)</td>
+          <td class="border px-4 py-2">14 Oct 2025, 06:45</td>
+          <td class="border px-4 py-2">7h 45m</td>
+          <td class="border px-4 py-2">Non-stop</td>
+          <td class="border px-4 py-2">Airbus A380</td>
+          <td class="border px-4 py-2">$750</td>
+        </tr>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">EK 305</td>
+          <td class="border px-4 py-2">Mumbai (BOM)</td>
+          <td class="border px-4 py-2">15 Oct 2025, 03:00</td>
+          <td class="border px-4 py-2">Dubai (DXB)</td>
+          <td class="border px-4 py-2">15 Oct 2025, 05:30</td>
+          <td class="border px-4 py-2">2h 30m</td>
+          <td class="border px-4 py-2">Non-stop</td>
+          <td class="border px-4 py-2">Boeing 777-300ER</td>
+          <td class="border px-4 py-2">$350</td>
+        </tr>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">EK 306</td>
+          <td class="border px-4 py-2">Dubai (DXB)</td>
+          <td class="border px-4 py-2">15 Oct 2025, 07:00</td>
+          <td class="border px-4 py-2">Mumbai (BOM)</td>
+          <td class="border px-4 py-2">15 Oct 2025, 09:30</td>
+          <td class="border px-4 py-2">2h 30m</td>
+          <td class="border px-4 py-2">Non-stop</td>
+          <td class="border px-4 py-2">Boeing 777-300ER</td>
+          <td class="border px-4 py-2">$350</td>
+        </tr>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">EK 407</td>
+          <td class="border px-4 py-2">Paris (CDG)</td>
+          <td class="border px-4 py-2">16 Oct 2025, 09:00</td>
+          <td class="border px-4 py-2">Dubai (DXB)</td>
+          <td class="border px-4 py-2">16 Oct 2025, 17:20</td>
+          <td class="border px-4 py-2">7h 20m</td>
+          <td class="border px-4 py-2">Non-stop</td>
+          <td class="border px-4 py-2">Airbus A380</td>
+          <td class="border px-4 py-2">$820</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p class="mt-6 text-gray-700 text-center">
+      All flights include meals, entertainment, and baggage allowance. Prices are subject to change based on availability.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white p-6 mt-8 text-center">
+    <p>&copy; 2025 Emirates Airlines. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
